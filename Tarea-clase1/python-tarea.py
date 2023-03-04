@@ -18,12 +18,16 @@ print("Sus datos son: ",name)
 #    desde el teclado
 #
 
-radio = input("Bienvenido, por favor ingrese un valor para el radio - Area de Circulo: ")
-radio = input("Ingrese dos valores para Base y Altura - Area de Triangulo: ")
+radio = int(input("Bienvenido, por favor ingrese un valor para el radio - Area de Circulo: "))
+base = int(input("Ingrese valor para Base - Area de Triangulo: "))
+altura = int(input("Ingrese valor para Altura - Area de Triangulo: "))
+lado = int(input("Ingrese el valor de un lado de un cuadrado - Area de un cuadrado"))
 pi = 3.14
-area = pow(radio,2)*pi
-print("El valor del área de un circulo es: ", area)
-
-
+areacirculo = pow(radio,2)*pi
+areatriangulo = (base * altura)/2
+areacuadrado = pow(lado,2)
+print("El valor del área de un circulo es: ", areacirculo)
+print("El valor del área de un triangulo es: ", areatriangulo)
+print("El valor del área de un cuadrado es: ", areacuadrado)
 
 
