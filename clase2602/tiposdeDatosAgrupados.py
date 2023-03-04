@@ -39,6 +39,7 @@ print(listaAll[2])
 ### lista anidada
 
 listaAnidada=[1,12,[12,12],["hola"],(1,2),{'key1':1,'key2':2}]
+
 ## accediendo a ella
 print("valor de listaanidada=>",listaAnidada[2][0])
 print("valor de listaanidada=>",listaAnidada[-1]['key1'])
