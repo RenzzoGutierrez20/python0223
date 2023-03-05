@@ -23,6 +23,8 @@ opciones = """
     4. Tipo de dato de lo que se va a ingresar 
     5. Ruta donde se encuentra trabajando
     6. Calcular la suma del valor digitado hasta ese número 
+    7. Comparar numeros
+    8. Contraseña: Ingresar a su usuario
 """
 print(opciones)
 op = int(input("Seleccione un numero: "))
@@ -99,17 +101,57 @@ if type(op) == int:
 # 
     elif op == 6:
         numero1 = int(input("Ingresa un valor para sumar hasta ese número: "))
-        i = 1 
+        suma = 0
         for i in range(numero1):
-            resultado = resultado + i 
-            print("valor de i: ",i) 
-            print("valor de resultado: ",resultado) 
-        print("Ahora, el valor de resultado total es : ",resultado)    
+            resultado = suma + i + 1 
+            suma = resultado 
+            print("El valor de i es: ", i, "El valor de la suma es: ", suma)
+        print("El resultado total es: ", suma)
+
+#
+#   7.Realizar un programa que lea 2 números por teclado y determine los siguientes aspectos
+#   - Si los dos numeros son iguales
+#   - Si los dos numeros son diferentes
+#   -Si el primero es mayor que el segundo
+#   -Si el segundo es mayor o igual que el primero 
+
+    elif op == 7:
+        variable1 = int(input("Ingrese el primer numero: "))
+        variable2 = int(input("Ingrese el segundo numero: "))
+        if(variable1 == variable2):
+            print("Las variables que colocaste son iguales")
+        elif(variable1 != variable2):
+            print("Las variables son diferentes")   
+            if(variable1 > variable2):
+                print(f"La primera variable {variable1} es mayor que la segunda variable {variable2}")
+            elif(variable2 >= variable1):
+                print(f"La seguunda variable {variable2} es menor o igual que la primera variable {variable1}")
+
+#
+#   8.Escribir un programa que almacene la cadena de caracteres CONTRASEÑA en una variable, pregunte al usuario por la contraseña
+#   e imprima por pantalla si la contraseña introducida por el usuario coincide con la guardada en la variable sin tener en cuenta
+#   las mayusculas y minusculas
+#
+
+    elif op == 8:
+        contraseña = []
+        contraseñaNueva = input("Escriba su nueva contraseña: ")
+        contraseña.append(contraseñaNueva)
+        contraseñaNueva = input("Escriba su contraseña para volver a afirmar que es usted: ")
+        if(contraseñaNueva == contraseña[0]):
+            print("Bienvenido, acabamos de confirmar que es usted")
+        else:
+            print("Lo sentimos, no podemos ingresar a tu cuenta")
 
 
+#
+#   9.Defina una lista con al menos 4 elementos que a su vez sean tuplas que tengan la siguiente estructura ('nombre', 'edad', 'dni')
+#   y otra que sea una lista de DNI's
+#   -Realizar un programa que filtre a la persona mayores de edad y a los que cumplen esa opción verificar que su dni se encuentre
+#   ahi, por ultimo imprimir el nombre de las personas que cumplen las condiciones anteriores
+#   -Definir una lista vacia, que luego se agregue el elemento que cumplio todas las condiciones
 
-
-
-
+lista9 = [('nombre','edad', 'dni'), ('DNIs')]
+    
 
 
