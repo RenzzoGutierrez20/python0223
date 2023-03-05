@@ -25,6 +25,8 @@ opciones = """
     6. Calcular la suma del valor digitado hasta ese número 
     7. Comparar numeros
     8. Contraseña: Ingresar a su usuario
+    9. Registro
+    10. Diccionario
 """
 print(opciones)
 op = int(input("Seleccione un numero: "))
@@ -151,7 +153,30 @@ if type(op) == int:
 #   ahi, por ultimo imprimir el nombre de las personas que cumplen las condiciones anteriores
 #   -Definir una lista vacia, que luego se agregue el elemento que cumplio todas las condiciones
 
-lista9 = [('nombre','edad', 'dni'), ('DNIs')]
-    
+    elif op == 9: 
+        lista9 = [('nombre','edad', 'dni'), ('DNIs')]
 
+#
+#   10.Defina un diccionario que tenga las siguientes llaves (nombre de curso, cantidad de alumnos, activo (tipo boleano), nombre
+#   de profesor, max nota, alumnos (lista) a todos ellos como valor que lleven un valor de inicializacion, por ejemplo si es entero
+#   0, si es string una cadena vacia
+#   -Realizar al menos 3 inputs para ingresar por teclado nuevos valores para el diccionario
+#   -Imprimir el diccionario 
+    elif op == 10:
+        diccionario = {
+            'nombre de curso': "", 
+            'cantidad de alumnos': 0,
+            'activo': "",
+            'Nombre de Profesor': "",
+            'Max nota': 0,
+            'alumnos': 0
+        }
 
+        diccionario[0] = input("Bienvenido, Ingresar el nombre del curso: ")
+        diccionario[1] = input("Ingresar la cantidad de alumnos: ")
+        diccionario[2] = input("Ingresar el activo, si es TRUE o FALSE ")
+        diccionario[3] = input("Ingresar el nombre del profesor: ")
+        diccionario[4] = input("Ingresar la maxima nota: ")
+        diccionario[5] = input("Ingresar a los alumnos de la clase: ")
+
+        print(diccionario)
