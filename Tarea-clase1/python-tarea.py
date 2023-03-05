@@ -95,7 +95,7 @@ if type(op) == int:
     elif op == 5:
         import sys 
         ruta = sys.argv[0]
-        print("Esta es la ruta donde estás trabajando: ",ruta)
+        print("Esta es la ruta donde estás trabajando: ", ruta)
 
 #
 #   6. Realice un programa que calcule la suma de los números hasta el valor ingresado
@@ -149,7 +149,7 @@ if type(op) == int:
 #
 #   9.Defina una lista con al menos 4 elementos que a su vez sean tuplas que tengan la siguiente estructura ('nombre', 'edad', 'dni')
 #   y otra que sea una lista de DNI's
-#   -Realizar un programa que filtre a la persona mayores de edad y a los que cumplen esa opción verificar que su dni se encuentre
+#   -Realizar un programa que filtre a las personas mayores de edad y a los que cumplen esa opción verificar que su dni se encuentre
 #   ahi, por ultimo imprimir el nombre de las personas que cumplen las condiciones anteriores
 #   -Definir una lista vacia, que luego se agregue el elemento que cumplio todas las condiciones
 
