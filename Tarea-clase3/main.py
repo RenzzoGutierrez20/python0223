@@ -1,4 +1,6 @@
+# 3. Importar esos modulos desde el archivo main. 
 from ejercicio3.funcionDividir import dividir
+
 # 1. En el archivo main.py crea la condición __name__ == '__main__' ejecutar los demás problemas
 
 if(__name__ == '__main__'):
